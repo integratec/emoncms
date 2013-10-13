@@ -17,8 +17,9 @@
   // form as mysql data is stored.
   
   // TIMESTORE is the default engine and requires installation of timestore, timestore is the fastest engine and also has other advantages like in built averaging.
-  
-  $default_engine = Engine::TIMESTORE;
+
+  $default_engine = Engine::MYSQL;
+  //$default_engine = Engine::TIMESTORE;
   
   
   
