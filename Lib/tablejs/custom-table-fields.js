@@ -183,11 +183,12 @@ function list_format_updated(time)
   var secs = (now-update)/1000;
   var mins = secs/60;
   var hour = secs/3600
+  var days = secs/84600
 
   var updated = secs.toFixed(0)+"s ago";
   if (secs>180) updated = mins.toFixed(0)+" mins ago";
   if (secs>(3600*2)) updated = hour.toFixed(0)+" hours ago";
-  if (hour>24) updated = "inactive";
+  if (hour > 24) updated = days.toFixed(0) + " days ago";
 
   var color = "rgb(255,125,20)";
   if (secs<25) color = "rgb(50,200,50)"
